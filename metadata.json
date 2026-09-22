@@ -1,0 +1,6 @@
+{
+  "name": "Aux Gâteries",
+  "description": "Site officiel d'Aux Gâteries — Boulangerie, Pâtisserie et Restaurant à Akassato, Bénin. Commandes directes sur WhatsApp au +229 01 41 78 55 55.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
