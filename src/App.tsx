@@ -23,7 +23,18 @@ export default function App() {
   const [config, setConfig] = useState<BusinessConfig>(() => {
     try {
       const saved = localStorage.getItem('aux_gateries_config');
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        // S'assurer que l'URL Google Maps et la localisation correspondent au Plus Code officiel
+        if (!parsed.googleMapsUrl || parsed.googleMapsUrl.includes('Akassato+Benin+Lycee+Technique')) {
+          return {
+            ...parsed,
+            city: INITIAL_BUSINESS_CONFIG.city,
+            googleMapsUrl: INITIAL_BUSINESS_CONFIG.googleMapsUrl,
+          };
+        }
+        return parsed;
+      }
     } catch (e) {
       console.warn('Erreur chargement config locale', e);
     }

@@ -19,9 +19,9 @@ export const INITIAL_BUSINESS_CONFIG: BusinessConfig = {
   whatsappNumber: WHATSAPP_NUMBER,
   phoneNumber: PHONE_NUMBER,
   address: "Akassato, dans la von du Lycée Technique SINO-Béninois, à l'entrée de la rue menant à l'Hôtel SYMPA.",
-  city: 'Akassato, Bénin',
+  city: 'G954+638, Akassato, Bénin',
   openingHours: 'Du Lundi au Dimanche : 06h30 – 22h30 (Service continu)',
-  googleMapsUrl: 'https://maps.google.com/?q=Akassato+Benin+Lycee+Technique+Sino+Beninois',
+  googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=BOULANGERIE+P%C3%82TISSERIE+AUX+G%C3%82TERIES,+G954%2B638,+Akassato,+B%C3%A9nin',
 };
 
 /**
